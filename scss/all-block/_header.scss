@@ -1,0 +1,165 @@
+.header {
+    margin-top: 14px;
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+
+.navbar__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 170px;
+
+}
+
+.navbar__link1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar__span {
+    color: #333;
+    font-family: "Futura PT Light";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+    &:hover {
+        color: #FFBD54;
+    }
+
+    &:active {
+        opacity: 0.6;
+        transition: all 2s ease-in-out;
+    }
+}
+
+.navbar__nuqta {
+    width: 4px;
+    height: 4px;
+    color: #FFBD54;
+    padding-bottom: 35px;
+}
+
+@media (max-width:1225px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .navbar__link {
+        margin: 0;
+    }
+
+    .navbar__nuqta {
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width:520px) {
+    .navbar__link {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .navbar__img {
+        padding-bottom: 10px;
+    }
+
+    .navbar__link1 {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .navbar__nuqta {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.header__img {
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+.header__first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 61px;
+    border: 1px solid #F3F3F3;
+    background: #FFF;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.nav__link {
+    color: #333;
+    font-family: "Futura PT Light";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+.header__btn {
+    border: none;
+    background: none;
+    color: #333;
+    text-align: right;
+    font-family: "Futura PT Light";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+@media (max-width:1225px) {
+    .header__first {
+        flex-direction: column;
+        background: #F9F9F9;
+        height: 190px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:910px) {
+    .nav__list {
+        flex-direction: column;
+        text-align: center;
+        margin-right: 50px;
+        gap: 5px;
+    }
+
+    .header__first {
+        flex-direction: column;
+        background: #F9F9F9;
+        height: 400px;
+    }
+}
